@@ -49,7 +49,7 @@
 
   <url>
     <loc>http://xifeng.ink/</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-01-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,21 +57,21 @@
   
   <url>
     <loc>http://xifeng.ink/tags/ww/</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-01-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xifeng.ink/tags/qq/</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-01-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xifeng.ink/tags/sq/</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-01-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -80,7 +80,7 @@
   
   <url>
     <loc>http://xifeng.ink/categories/%E9%BB%98%E8%AE%A4/</loc>
-    <lastmod>2022-01-11</lastmod>
+    <lastmod>2022-01-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
