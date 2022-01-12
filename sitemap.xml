@@ -56,6 +56,13 @@
 
   
   <url>
+    <loc>http://xifeng.ink/tags/sq/</loc>
+    <lastmod>2022-01-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://xifeng.ink/tags/ww/</loc>
     <lastmod>2022-01-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -64,13 +71,6 @@
   
   <url>
     <loc>http://xifeng.ink/tags/qq/</loc>
-    <lastmod>2022-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xifeng.ink/tags/sq/</loc>
     <lastmod>2022-01-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
