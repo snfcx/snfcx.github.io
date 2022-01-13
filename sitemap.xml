@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://xifeng.ink/%E8%AE%B0%E5%BD%95%E6%8A%98%E8%85%BE/MarkDown%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://xifeng.ink/posts/42e4/</loc>
     
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xifeng.ink/posts/954a/</loc>
+    
+    <lastmod>2022-01-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xifeng.ink/posts/3eeb/</loc>
+    
+    <lastmod>2022-01-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,15 +30,6 @@
   
   <url>
     <loc>http://xifeng.ink/about/index.html</loc>
-    
-    <lastmod>2022-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xifeng.ink/%E9%BB%98%E8%AE%A4/hello-world/</loc>
     
     <lastmod>2022-01-11</lastmod>
     
@@ -49,43 +58,50 @@
 
   <url>
     <loc>http://xifeng.ink/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://xifeng.ink/tags/hexo/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <loc>http://xifeng.ink/tags/%E7%BE%8E%E5%8C%96/</loc>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xifeng.ink/tags/next/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xifeng.ink/tags/hexo/</loc>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xifeng.ink/tags/MarkDown/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xifeng.ink/tags/ww/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xifeng.ink/tags/qq/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -94,14 +110,14 @@
   
   <url>
     <loc>http://xifeng.ink/categories/%E8%AE%B0%E5%BD%95%E6%8A%98%E8%85%BE/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xifeng.ink/categories/%E9%BB%98%E8%AE%A4/</loc>
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2022-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
