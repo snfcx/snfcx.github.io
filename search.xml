@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/3eeb/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>默认</category>
-      </categories>
-      <tags>
-        <tag>ww</tag>
-        <tag>qq</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo设置美化记录			&lt;!--   标题   --&gt;</title>
-    <url>/posts/42e4/</url>
-    <content><![CDATA[<h2 id="网站底部添加运行时间"><a href="#网站底部添加运行时间" class="headerlink" title="网站底部添加运行时间"></a>网站底部添加运行时间</h2><blockquote>
-<p><a href="https://xian6ge.cn/posts/82ce1911/">Hexo 页脚增加网站运行时间统计</a></p>
-</blockquote>
-<ol>
-<li>找到 <code>\themes\next\layout\_partials\</code> 下面的 <code>footer.njk</code> 文件</li>
-<li>在23行后或者其他代码结束处添加以下代码 (不同地方位置不同按需更改)<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;span id=<span class="string">&quot;sitetime&quot;</span>&gt;&lt;/span&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">language</span>=<span class="string">javascript</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">	<span class="function"><span class="keyword">function</span> <span class="title">siteTime</span>(<span class="params"></span>)</span>&#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="built_in">window</span>.setTimeout(<span class="string">&quot;siteTime()&quot;</span>, <span class="number">1000</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> seconds = <span class="number">1000</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> minutes = seconds * <span class="number">60</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> hours = minutes * <span class="number">60</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> days = hours * <span class="number">24</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> years = days * <span class="number">365</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayYear = today.getFullYear();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayMonth = today.getMonth()+<span class="number">1</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayDate = today.getDate();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayHour = today.getHours();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayMinute = today.getMinutes();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todaySecond = today.getSeconds();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="comment">/* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		year - 作为date对象的年份，为4位年份值</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		month - 0-11之间的整数，做为date对象的月份</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		day - 1-31之间的整数，做为date对象的天数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		minutes - 0-59之间的整数，做为date对象的分钟数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		seconds - 0-59之间的整数，做为date对象的秒数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		microseconds - 0-999之间的整数，做为date对象的毫秒数 */</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> t1 = <span class="built_in">Date</span>.UTC(<span class="number">2018</span>,<span class="number">02</span>,<span class="number">13</span>,<span class="number">15</span>,<span class="number">00</span>,<span class="number">00</span>); <span class="comment">//北京时间2018-2-13 00:00:00</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> t2 = <span class="built_in">Date</span>.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diff = t2-t1;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffYears = <span class="built_in">Math</span>.floor(diff/years);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffDays = <span class="built_in">Math</span>.floor((diff/days)-diffYears*<span class="number">365</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffHours = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days)/hours);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffMinutes = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days-diffHours*hours)/minutes);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffSeconds = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="built_in">document</span>.getElementById(<span class="string">&quot;sitetime&quot;</span>).innerHTML=<span class="string">&quot; 已运行&quot;</span>+<span class="comment">/*diffYears+&quot; 年 &quot;+*/</span>diffDays+<span class="string">&quot; 天 &quot;</span>+diffHours+<span class="string">&quot; 小时 &quot;</span>+diffMinutes+<span class="string">&quot; 分钟 &quot;</span>+diffSeconds+<span class="string">&quot; 秒&quot;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">	&#125;<span class="comment">/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">	siteTime();</span></span></span><br><span class="line"><span class="javascript"><span class="xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>记录折腾</category>
-      </categories>
-      <tags>
-        <tag>美化</tag>
-        <tag>next</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown语法记录</title>
     <url>/posts/954a/</url>
     <content><![CDATA[<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#  一级标题</span><br><span class="line">##  二级标题</span><br><span class="line">...</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
@@ -138,9 +93,54 @@
         <category>记录折腾</category>
       </categories>
       <tags>
-        <tag>next</tag>
         <tag>hexo</tag>
+        <tag>next</tag>
         <tag>MarkDown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/3eeb/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>默认</category>
+      </categories>
+      <tags>
+        <tag>ww</tag>
+        <tag>qq</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo设置美化记录			&lt;!--   标题   --&gt;</title>
+    <url>/posts/42e4/</url>
+    <content><![CDATA[<h2 id="网站底部添加运行时间"><a href="#网站底部添加运行时间" class="headerlink" title="网站底部添加运行时间"></a>网站底部添加运行时间</h2><blockquote>
+<p><a href="https://xian6ge.cn/posts/82ce1911/">Hexo 页脚增加网站运行时间统计</a></p>
+</blockquote>
+<ol>
+<li>找到 <code>\themes\next\layout\_partials\</code> 下面的 <code>footer.njk</code> 文件</li>
+<li>在23行后或者其他代码结束处添加以下代码 (不同地方位置不同按需更改)<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">&lt;span id=<span class="string">&quot;sitetime&quot;</span>&gt;&lt;/span&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">language</span>=<span class="string">javascript</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">	<span class="function"><span class="keyword">function</span> <span class="title">siteTime</span>(<span class="params"></span>)</span>&#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="built_in">window</span>.setTimeout(<span class="string">&quot;siteTime()&quot;</span>, <span class="number">1000</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> seconds = <span class="number">1000</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> minutes = seconds * <span class="number">60</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> hours = minutes * <span class="number">60</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> days = hours * <span class="number">24</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> years = days * <span class="number">365</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayYear = today.getFullYear();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayMonth = today.getMonth()+<span class="number">1</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayDate = today.getDate();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayHour = today.getHours();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todayMinute = today.getMinutes();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> todaySecond = today.getSeconds();</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="comment">/* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		year - 作为date对象的年份，为4位年份值</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		month - 0-11之间的整数，做为date对象的月份</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		day - 1-31之间的整数，做为date对象的天数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		minutes - 0-59之间的整数，做为date对象的分钟数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		seconds - 0-59之间的整数，做为date对象的秒数</span></span></span></span><br><span class="line"><span class="comment"><span class="javascript"><span class="xml">		microseconds - 0-999之间的整数，做为date对象的毫秒数 */</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> t1 = <span class="built_in">Date</span>.UTC(<span class="number">2018</span>,<span class="number">02</span>,<span class="number">13</span>,<span class="number">15</span>,<span class="number">00</span>,<span class="number">00</span>); <span class="comment">//北京时间2018-2-13 00:00:00</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> t2 = <span class="built_in">Date</span>.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diff = t2-t1;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffYears = <span class="built_in">Math</span>.floor(diff/years);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffDays = <span class="built_in">Math</span>.floor((diff/days)-diffYears*<span class="number">365</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffHours = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days)/hours);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffMinutes = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days-diffHours*hours)/minutes);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="keyword">var</span> diffSeconds = <span class="built_in">Math</span>.floor((diff-(diffYears*<span class="number">365</span>+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">		<span class="built_in">document</span>.getElementById(<span class="string">&quot;sitetime&quot;</span>).innerHTML=<span class="string">&quot; 已运行&quot;</span>+<span class="comment">/*diffYears+&quot; 年 &quot;+*/</span>diffDays+<span class="string">&quot; 天 &quot;</span>+diffHours+<span class="string">&quot; 小时 &quot;</span>+diffMinutes+<span class="string">&quot; 分钟 &quot;</span>+diffSeconds+<span class="string">&quot; 秒&quot;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">	&#125;<span class="comment">/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">	siteTime();</span></span></span><br><span class="line"><span class="javascript"><span class="xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>记录折腾</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>美化</tag>
       </tags>
   </entry>
 </search>

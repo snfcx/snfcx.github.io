@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://xifeng.ink/posts/42e4/</loc>
+    <loc>http://xifeng.ink/posts/954a/</loc>
     
     <lastmod>2022-01-13</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://xifeng.ink/posts/954a/</loc>
+    <loc>http://xifeng.ink/posts/42e4/</loc>
     
     <lastmod>2022-01-13</lastmod>
     
@@ -65,6 +65,27 @@
 
   
   <url>
+    <loc>http://xifeng.ink/tags/hexo/</loc>
+    <lastmod>2022-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xifeng.ink/tags/next/</loc>
+    <lastmod>2022-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xifeng.ink/tags/MarkDown/</loc>
+    <lastmod>2022-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://xifeng.ink/tags/ww/</loc>
     <lastmod>2022-01-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -85,38 +106,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://xifeng.ink/tags/next/</loc>
-    <lastmod>2022-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xifeng.ink/tags/hexo/</loc>
-    <lastmod>2022-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xifeng.ink/tags/MarkDown/</loc>
-    <lastmod>2022-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>http://xifeng.ink/categories/%E9%BB%98%E8%AE%A4/</loc>
+    <loc>http://xifeng.ink/categories/%E8%AE%B0%E5%BD%95%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2022-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xifeng.ink/categories/%E8%AE%B0%E5%BD%95%E6%8A%98%E8%85%BE/</loc>
+    <loc>http://xifeng.ink/categories/%E9%BB%98%E8%AE%A4/</loc>
     <lastmod>2022-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
