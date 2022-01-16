@@ -74,21 +74,7 @@
 
   
   <url>
-    <loc>http://xifeng.ink/tags/ww/</loc>
-    <lastmod>2022-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xifeng.ink/tags/qq/</loc>
-    <lastmod>2022-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://xifeng.ink/tags/%E7%BE%8E%E5%8C%96/</loc>
+    <loc>http://xifeng.ink/tags/hexo/</loc>
     <lastmod>2022-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -102,14 +88,28 @@
   </url>
   
   <url>
-    <loc>http://xifeng.ink/tags/hexo/</loc>
+    <loc>http://xifeng.ink/tags/MarkDown/</loc>
     <lastmod>2022-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xifeng.ink/tags/MarkDown/</loc>
+    <loc>http://xifeng.ink/tags/%E7%BE%8E%E5%8C%96/</loc>
+    <lastmod>2022-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xifeng.ink/tags/ww/</loc>
+    <lastmod>2022-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xifeng.ink/tags/qq/</loc>
     <lastmod>2022-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
