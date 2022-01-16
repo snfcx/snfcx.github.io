@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo+gituhb+gitee域名分流</title>
-    <url>/posts/8f28/</url>
-    <content><![CDATA[<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3>]]></content>
-      <categories>
-        <category>-记录折腾</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo设置美化记录</title>
     <url>/posts/42e4/</url>
     <content><![CDATA[<h2 id="网站底部添加运行时间"><a href="#网站底部添加运行时间" class="headerlink" title="网站底部添加运行时间"></a>网站底部添加运行时间</h2><blockquote>
@@ -27,6 +19,14 @@
         <tag>next</tag>
         <tag>hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hexo+gituhb+gitee域名分流</title>
+    <url>/posts/8f28/</url>
+    <content><![CDATA[<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3>]]></content>
+      <categories>
+        <category>-记录折腾</category>
+      </categories>
   </entry>
   <entry>
     <title>Hello World</title>
